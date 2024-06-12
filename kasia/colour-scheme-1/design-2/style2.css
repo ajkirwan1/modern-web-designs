@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../../../images/istockphoto-1251716975-1024x1024.jpg);
+  background-size: cover;
+  color: white;
+}
+h1 {
+  font-size: 52px;
+  margin-bottom: 32px;
+  line-height: 1.05;
+}
+p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 48px;
+}
+.btn:link,
+.btn:visited {
+  height: 50px;
+  background-color: #011b10d0;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 9px;
+  align-self: flex-end;
+}
+
+.carousel-container {
+  display: flex;
+}
+
+h2 {
+  font-size: 42px;
+  margin-bottom: 48px;
+}
+.header-btn {
+position: absolute;
+left: 50%;
+bottom: 5%;
+}
+
+.header-container {
+  display: flex;
+  width: 1200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -40%);
+}
+.header-inner-right {
+  width: 50%;
+  margin-left: auto;
+  text-align: center;
+  animation: fadeIn 5s;
+}
+
+.header-inner-left {
+   
+  }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.section-1 {
+  padding: 96px 0;
+  background-color: #e4deae;
+  height: 50vh;
+  border-top: 3px solid #011b10d0;
+  border-bottom: 3px solid #011b10d0;
+}
+
+.section-1 h2 p {
+  color: #011b10;
+}
+
+.section-2 {
+  padding: 96px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../../../images/istockphoto-516599048-1024x1024.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+.nav-1 {
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #b7bf96;
+  background-color: #011b1080;
+}
+.nav-2 {
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-left: 50%;
+  border-bottom: none;
+  background-color: none;
+}
+.nav-2 a {
+  text-decoration: none;
+  color: white;
+}
