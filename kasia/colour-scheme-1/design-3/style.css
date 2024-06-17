@@ -1,46 +1,79 @@
 body {
     background-color: #072633;
-  }
+     }
+    
+
+  a {
+text-decoration: none;
+color:aliceblue;
+font-family: 'Times New Roman', Times, serif;
+    } 
+
 
   header {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid rgba(189, 116, 24, 1);
     justify-content: flex-start;
-    padding: 15px;
+     position: relative;
+    height: 100vh;
+    width: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(mainpicture2.jpg);
+    background-size: cover;
+    color: white;
+   
   }
 
   .logo {
-    height: 60px;
+    height: 70px;
     width: auto;
-
-  }
-  
-  .logo-div {
-    display: flex;
-    
-  }
-
-  nav {
-    display: flex;
-    padding: 20px;
-    margin: auto;
-    position: absolute;
-    left: 80%;
-    top: 10px;
-    justify-content:flex-end;
-    gap: 30px;
-    font-size: 20px;
-    font-family:'Times New Roman', Times, serif;
    
-    
-  }
+ }
+  
+.logo-div {
 
-  h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  
+
+}
+
+
+
+      nav  {
+    display: flex;
+    justify-content:flex-end;
+    gap: 70px;
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+
+      
+    }
+
+   h2 {
 font-family: 'Times New Roman', Times, serif;
 color: rgba(226, 226, 226, 0.7);
 display: flex;
 justify-content:center;
 font-size: 35px;
 
+
+
   }
+
+  title {
+    color: rgba(226, 226, 226, 0.7);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+ .img-container {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../../images/istockphoto-1251716975-1024x1024.jpg);
+ }
