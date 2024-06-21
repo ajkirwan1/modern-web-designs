@@ -47,10 +47,10 @@ font-family: 'Times New Roman', Times, serif;
     justify-content:flex-end;
     gap: 70px;
     font-size: 25px;
-    font-family:'Times New Roman', Times, serif;
-    margin-right: 10px;
+    font-family:'Courier New', Courier, monospace;
+    margin-right: 20px;
     text-decoration: none;
-    color: white;
+    
 
       
     }
@@ -77,3 +77,56 @@ font-size: 35px;
  .img-container {
   background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../../images/istockphoto-1251716975-1024x1024.jpg);
  }
+
+ .section-1 {
+  display: flex;
+  align-items: center;
+   padding: 96px 0; 
+  background-color: #0F5471;
+  height: 60vh;
+  border-top: 3px solid #011b10d0;
+  border-bottom: 3px solid #011b10d0;
+}
+
+.header-btn {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+}
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  margin: 30px;
+  padding: 30px;
+  border-radius: 10px;
+  /* flex-basis: 100%; */
+  background-color: white;
+  flex-direction: column;
+}
+
+.carousel-container .carousel-item,
+.carousel-container .carousel-item-hidden {
+  display: none; /* hide all slide images not currently being viewed */
+}
+
+
+
+.carousel-container .carousel-item-visible {
+  display: flex; /* show current slide image */
+  animation: fadeVisibility 0.5s; /* for fading effect when switching between slides */
+}
+
+.carousel-container .carousel-item img {
+   height:250px; 
+  width: auto;
+  margin: auto;
+  
+}
+
+.utility-container {
+  padding: 100px;
+  background-color: #D1C9C9;
+  
+}
