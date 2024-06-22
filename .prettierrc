@@ -1,0 +1,22 @@
+{
+  "trailingComma": "es5",
+  "tabWidth": 4,
+  "semi": false,
+  "singleQuote": true,
+	"overrides": [
+    {
+      "files": "*.html",
+      "options": {
+        "semi": true,
+				"tabWidth": 2
+      }
+    },
+		{
+      "files": "*.css",
+      "options": {
+        "semi": true,
+				"tabWidth": 2
+      }
+    }
+	]
+}
