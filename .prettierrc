@@ -7,14 +7,12 @@
     {
       "files": "*.html",
       "options": {
-        "semi": true,
 				"tabWidth": 2
       }
     },
 		{
       "files": "*.css",
       "options": {
-        "semi": true,
 				"tabWidth": 2
       }
     }

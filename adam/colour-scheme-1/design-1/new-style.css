@@ -14,12 +14,12 @@ header h1 {
 }
 
 nav {
-  display: flex;
-  padding: 10px;
-  position: absolute;
   left: 40%;
+  position: absolute;
+  display: flex;
   top: 5%;
   justify-content: center;
+  padding: 10px;
   gap: 40px;
   border-bottom: 1px solid #b7bf96;
 }
@@ -37,8 +37,8 @@ img {
 }
 
 hr {
-  width: 30%;
   size: 1px;
+  width: 30%;
 }
 
 .image-container {

@@ -27,7 +27,10 @@ export default [
 				'error',
 				{ selfClosing: 'always' },
 			],
-			'@html-eslint/no-extra-spacing-attrs': 'error',
+			'@html-eslint/no-extra-spacing-attrs': [
+				'error',
+				{ enforceBeforeSelfClose: true },
+			],
 			'@html-eslint/id-naming-convention': ['error', 'kebab-case'],
 			'@html-eslint/no-duplicate-attrs': 'error',
 			'@html-eslint/no-duplicate-id': 'error',
