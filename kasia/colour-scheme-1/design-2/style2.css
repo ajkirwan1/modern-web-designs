@@ -65,10 +65,6 @@ bottom: 5%;
   animation: fadeIn 5s;
 }
 
-.header-inner-left {
-   
-  }
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
