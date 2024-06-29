@@ -1,5 +1,8 @@
 body {
   background-image: linear-gradient(to right, #072633, #0f5471);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: aliceblue;
 }
 
 a {
@@ -17,7 +20,6 @@ header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(mainpicture2.jpg);
   background-size: cover;
-  color: white;
   border-top: 1px solid #bd7418 ;
   border-bottom: 1px solid #bd7418;
 }
@@ -31,6 +33,13 @@ hr {
   border: none;
   height: 1px;  
 }
+
+h1 {
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+}
+
 
 .logo {
   height: 90px;
@@ -48,45 +57,18 @@ nav {
   align-items: center;
   gap: 70px;
   font-size: 30px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin-right: 120px;
   text-decoration: none;
 }
 
 nav a {
   font-size: 22px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 300;
   letter-spacing: 1px;
-  color: rgba(226, 226, 226, 0.7);
 }
 
 nav a:hover {
   text-decoration: underline 0.5px white;
-}
-/* 
-h1 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: #E2E2E2;
-  justify-content: center;
-  font-size: 45px;
-  font-weight: 300;
-  letter-spacing: 10px;
-  margin-top: 2px;
-} */
-
-h2 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: rgba(226, 226, 226, 0.7);
-  display: flex;
-  justify-content: center;
-  font-size: 25px;
-  font-weight: 400;
-  letter-spacing: 3px;
 }
 
 title {
@@ -106,20 +88,9 @@ title {
   display: flex;
   align-items: center;
   justify-content: space-around;
-
   background-image: linear-gradient(to right, #072633, #0f5471);
   height: 80vh;
-  border-top: 3px solid #011b10d0;
-  border-bottom: 3px solid #011b10d0;
   padding: 60px;
-}
-
-.header-btn {
-  font-size: 15px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 200;
-  letter-spacing: 1px;
 }
 
 .btn:hover {
@@ -137,7 +108,6 @@ title {
   width: 80%;
   border: 1.5px #bd7418 solid;
   min-height: 600px;
-
 }
 
 .carousel-flex {
@@ -146,12 +116,7 @@ title {
 }
 
 .carousel-container h1 {
-  font-size: 40px;
-  font-weight: 200;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   display: flex;
-  margin-top: 4px;
 }
 
 .carousel-container .carousel-item,
@@ -165,11 +130,6 @@ title {
 }
 
 .header-carousel-container h2 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 250;
-  letter-spacing: 5px;
-  font-size: 30px;
   align-items: center;
   margin-left:  50px;
   color: #E2E2E2;
@@ -177,9 +137,6 @@ title {
   position:absolute;
   top:50%;
   transform: translate(0,-50%);
-
-
-  
 }
 
 .carousel-container .carousel-item img {
@@ -194,8 +151,6 @@ title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 20px;
   margin: 30px;
 }
@@ -206,12 +161,6 @@ title {
   height: 100%;
   justify-content: space-around;
   align-items: center;
-  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 40px;
-  letter-spacing: 3px;
-  font-weight: 300;
-  color: rgba(226, 226, 226, 0.7); */
 }
 
 .carousel-dots {
@@ -219,14 +168,11 @@ title {
   display: flex;
   justify-content: space-evenly;
   padding:40px;
-  
 }
-
 
 .dot {
   opacity: 0.5;
 }
-
 
 .dot:focus {
   border: 0.5px solid black; /* dot for currently visited slide */
@@ -255,25 +201,22 @@ title {
 }
 
 
-@media(max-width:1028px){
+@media(max-width:1028px) {
   .header-carousel-container h2 {
     left:50%;
     transform:translate(-50%, 85px);
     top:0;
     margin:0;
   }
-
-
 }
 
 .section-2 {
-height: 100vh;
-background-color :#0f5471;
+  height: 80vh;
 }
 
 .box-icon-container {
-display: flex;
-justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .box-icon {
@@ -289,13 +232,11 @@ justify-content: space-around;
   }
 
 .box-icon  img {
- width: 70px;
-height: auto;
-  
-
+  width: 70px;
+  height: auto;  
 }
+
 .box-icon p {
  text-align: center;
- 
 }
 
