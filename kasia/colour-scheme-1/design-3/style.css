@@ -51,22 +51,24 @@ font-weight: 100;
 
 
 .logo {
-  height: 90px;
+  height: 80px;
   width: auto;
-  margin: 30px;
+  
 }
 
 .logo-div {
-  height: 20vh;
+  height: 15vh;
 }
 
 nav {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 70px;
+  justify-content: space-between;
+  align-items:end;
+  gap: 50px;
   font-size: 30px;
   text-decoration: none;
+
+  
 }
 
 nav a {
@@ -98,7 +100,9 @@ title {
   justify-content: space-around;
   background-image: linear-gradient(to right, #072633, #0f5471);
   height: 80vh;
-  padding: 60px;
+  margin-top:80px;
+  margin-bottom: 60px;
+  
 }
 
 .btn:hover {
@@ -110,7 +114,6 @@ title {
   position: relative;
   gap: 20px;
   padding: 10px;
-  border-radius: 15px;
   background-color: white;
   height: 100%;
   width: 100%;
@@ -163,7 +166,10 @@ title {
   justify-content: space-between;
   align-items: center;
   font-size: 20px;
-  margin: 30px;
+  height: 16vh;
+  flex-wrap: wrap;
+
+  
 }
 
 .overlay-text {
@@ -218,25 +224,35 @@ title {
     transform:translate(-50%, 85px);
     top:0;
     margin:0;
+    
+    
   }
 }
 
 .section-2 {
-  height:90vh;
+  min-height: 100vh;
+  max-height: 200vh;
   text-align: center;
   display: flex;
   flex-direction: column;
   gap:50px;
+
 
 }
 
 .box-icon-container {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  min-width: 300px;
 }
 
 .box-icon {
-  width: 25%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%;
+  min-width: 300px;
+  margin: 10px;
   height: 350px;
   border: 1px solid #231F20;
   background-color: rgba(217, 217, 217, 0.7);
@@ -249,7 +265,7 @@ title {
   }
 
 .box-icon  img {
-  width: 80px;
+  width: 60px;
   height: auto;  
 }
 
@@ -263,10 +279,14 @@ title {
   width: auto;
   margin:auto;
   display: flex;
-  
-  
-  
+  }
+
+.facebook-logo {
+  height:30px;
+  width: auto;
 }
+
+
 
 footer {
   background-color: white;
@@ -275,4 +295,15 @@ footer {
 }
 
 
+@media(max-width:800px) {
+  .container {
+    padding: 30px;
+    justify-content: center;
+  }
 
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
