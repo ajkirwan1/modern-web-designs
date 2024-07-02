@@ -31,7 +31,7 @@ header {
 
 
 h1 {
-  font-size: 3em;
+  font-size: 2.5em;
   margin-block-start: 0.67em;
   margin-block-end: 0.67em;
   display: flex;
@@ -53,6 +53,9 @@ font-weight: 100;
 .logo {
   height: 80px;
   width: auto;
+  
+  
+
   
 }
 
@@ -125,11 +128,30 @@ title {
 .carousel-flex {
   display: flex;
   flex-direction: column;
+  flex-basis: 50%;
 }
 
 .carousel-container h1 {
   display: flex;
  color:  #072633;
+}
+
+
+
+.section-1-outer-container {
+  display: flex;
+
+}
+
+.section-1-inner-container-1 {
+flex-basis: 50%;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+color: #072633;
+
+
 }
 
 .carousel-container .carousel-item,
@@ -145,7 +167,6 @@ title {
 .header-carousel-container h2 {
   align-items: center;
   margin-left:  50px;
-  color:  #072633;
   border-bottom: solid 1.2px #bd7418;
   position:absolute;
   top:50%;
@@ -168,6 +189,7 @@ title {
   font-size: 20px;
   height: 16vh;
   flex-wrap: wrap;
+  padding:  0px 25px;
 
   
 }
@@ -183,12 +205,13 @@ title {
 .carousel-dots {
   text-align: center;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding:30px;
 }
 
 .dot {
   opacity: 0.5;
+  display: none;
 }
 
 .dot:focus {
@@ -212,9 +235,10 @@ title {
   border: 0;
   font-size: 16px;
   font-weight: bold;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
+  cursor: grab;
+  width: 70px;
+  height: 100px;
+  margin-top: -250px;
 }
 
 
@@ -256,7 +280,7 @@ title {
   height: 350px;
   border: 1px solid #231F20;
   background-color: rgba(217, 217, 217, 0.7);
-  box-shadow: 10px 10px 5px  #0000005b;
+  box-shadow: 5px 5px 1px  #0000005b;
   display: flex;
   flex-direction:column;
   align-items: center;
@@ -265,7 +289,7 @@ title {
   }
 
 .box-icon  img {
-  width: 60px;
+  width: 45px;
   height: auto;  
 }
 
@@ -284,6 +308,7 @@ title {
 .facebook-logo {
   height:30px;
   width: auto;
+  filter: invert(1);
 }
 
 
@@ -301,9 +326,28 @@ footer {
     justify-content: center;
   }
 
+  .section-1-outer-container {
+    flex-direction: column;
+  }
+
 
   nav {
     flex-wrap: wrap;
     justify-content: center;
   }
+}
+
+.pdf {
+  height: 70px;
+  width: auto;
+}
+
+#carousel-button-prev {
+margin-left: -200px;
+
+
+}
+
+#carousel-button-next {
+margin-right: -200px;
 }
