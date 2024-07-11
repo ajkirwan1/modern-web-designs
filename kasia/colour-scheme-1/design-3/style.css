@@ -1,4 +1,6 @@
-
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-image: linear-gradient(to right, #083a51, #115978f7);
@@ -15,18 +17,24 @@ a {
   color: aliceblue;
 }
 
+a:hover {
+  text-decoration: underline 1px;
+
+
+}
+
 header {
   display: flex;
   align-items: center;
   justify-content: space-around;
   position: relative;
-  height: 82vh;
+  height: 84vh;
   width: auto;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(mainpicture2.jpg);
   background-size: cover;
-  border-top: 1.5px solid #bd7418 ;
-  border-bottom: 1.5px solid #bd7418;
+  border-top: 2px solid #bd7418 ;
+  border-bottom: 2px solid #bd7418;
 }
 
 
@@ -48,7 +56,7 @@ align-items: flex-end;
 
   h2 {
 
-    font-size:1.8em;
+    font-size:1.6em;
   }
 
 
@@ -100,11 +108,14 @@ title {
   align-items: center;
   justify-content: space-around;
   background-image: linear-gradient(to right, #072633, #0f5471);
-  margin-top:80px;
   margin-bottom: 60px;
-  min-height: 80vh3;
   max-height: 200vh;
 }
+
+.btn {
+  /* scroll-behavior: smooth; */
+}
+
 
 .btn:hover {
   text-decoration: underline 0.5px white;
@@ -118,7 +129,7 @@ title {
   background-color: white;
   height: 100%;
   width: 100%;
-  border: 1.5px #bd7418 solid;
+  border: 2px #bd7418 solid;
   min-height: 600px;
   
 }
@@ -142,15 +153,10 @@ title {
 }
 
 .section-1-inner-container-1 {
-flex-basis: 50%;
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-align-items: center;
 color: #072633;
-background-color: aliceblue;
-
-
+background-color: #bd73180c;
+flex-basis: 50%;
+text-align: center;
 }
 
 .carousel-container .carousel-item,
@@ -161,6 +167,13 @@ background-color: aliceblue;
 .carousel-container .carousel-item-visible {
   display: flex; /* show current slide image */
   animation: fadeVisibility 0.5s; /* for fading effect when switching between slides */
+}
+
+.header-carousel-container {
+display: flex;
+align-items: center;
+justify-content: space-around;
+
 }
 
 .header-carousel-container h2 {
@@ -202,6 +215,7 @@ background-color: aliceblue;
   height: 100%;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
 }
 
 .carousel-dots {
@@ -211,13 +225,19 @@ background-color: aliceblue;
   padding:30px;
 }
 
+input[type=radio]{
+  accent-color:#115978f7;
+  
+ 
+}
+
 .dot {
-  opacity: 0.5;
-  display: none;
+  
+
 }
 
 .dot:focus {
-  border: 0.5px solid black; /* dot for currently visited slide */
+   border: 0.5px solid;  
 }
 
 
@@ -230,17 +250,33 @@ background-color: aliceblue;
   }
 }
 
+.carousel-info {
+display: none;
+}
 
-.carousel-dots button {
+.carousel-info-hidden {
+  display: none;
+  }
+
+.carousel-info-visible {
+  display: flex; /* show current slide image */
+  animation: fadeVisibility 0.5s; /* for fading effect when switching between slides */
+  justify-content: space-around;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.header-carousel-container button {
   border-radius: 50px;
   background:none;
   border: 0;
   font-size: 16px;
   font-weight: bold;
   cursor: grab;
-  width: 70px;
-  height: 100px;
-  margin-top: -250px;
+  width: 60px;
+  height: 80px;
 }
 
 
@@ -262,8 +298,10 @@ background-color: aliceblue;
   display: flex;
   flex-direction: column;
   gap:50px;
+}
 
-
+.section-2-text {
+padding: 5px;
 }
 
 .box-icon-container {
@@ -302,7 +340,7 @@ background-color: aliceblue;
 }
 
 .ak-logo {
-  height:75px;
+  height:80px;
   width: auto;
   margin:auto;
   /* display: flex; */
@@ -324,6 +362,20 @@ footer {
   
 }
 
+.kontakt-section {
+  font-size :15px;
+  color:#072633;
+  font-weight: 200;
+
+
+}
+
+.kontakt-section2 {
+  font-size: 12px;
+  color: #072633;
+  font-weight: 200;
+  
+}
 
 @media(max-width:800px) {
   .container {
@@ -343,7 +395,7 @@ footer {
 }
 
 .pdf {
-  height: 60px;
+  height: 50px;
   width: auto;
   margin-bottom: 20px;
   border:  0.5px grey  solid;
@@ -352,11 +404,11 @@ footer {
 }
 
 #carousel-button-prev {
-margin-left: -200px;
+
 
 
 }
 
 #carousel-button-next {
-margin-right: -200px;
+
 }
