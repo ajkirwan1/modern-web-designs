@@ -35,7 +35,7 @@ header {
     url(background-small.jpg);
   background-size: cover;
   border-top: 2px solid #bd7418 ;
-  border-bottom: 2px solid #bd7418;
+  
 }
 
 
@@ -139,6 +139,8 @@ title {
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
+  border: solid black 0.5px;
+  border-radius: 3px;
 }
 
 .carousel-container h1 {
@@ -150,14 +152,18 @@ title {
 
 .section-1-outer-container {
   display: flex;
+  gap: 10px;
 
 }
 
 .section-1-inner-container-1 {
 color: #072633;
-background-color: #bd73180c;
+background-color:#fff7ed;
 flex-basis: 50%;
 text-align: center;
+border: solid  black 0.5px;
+border-radius: 3px;
+
 }
 
 .carousel-container .carousel-item,
@@ -275,7 +281,7 @@ display: none;
   font-size: 16px;
   font-weight: bold;
   cursor: grab;
-  width: 60px;
+  width: 50px;
   height: 80px;
 }
 
@@ -325,7 +331,7 @@ padding: 5px;
   flex-direction:column;
   align-items: center;
   justify-content: center;
-  border-radius: 10%;
+  border-radius: 8px;
   }
 
 
@@ -340,7 +346,7 @@ padding: 5px;
 }
 
 .ak-logo {
-  height:80px;
+  height:75px;
   width: auto;
   /* display: flex; */
   }
@@ -354,11 +360,11 @@ padding: 5px;
 
 
 footer {
-  background-color: white;
+  background-color:#fff7ed;
   border-top: 2px solid #bd7418;
   height: 20vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   
 }
@@ -400,7 +406,6 @@ footer {
   text-align: center;
   display: flex;
   flex-direction: column;
-  flex-basis: 15%;
   align-content: center;
   align-items: center;
   justify-content: center;
