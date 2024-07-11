@@ -9,6 +9,7 @@ body {
     color: aliceblue;
     font-weight: 200;
     margin:0px;
+
     
 }
 
@@ -30,8 +31,8 @@ header {
   position: relative;
   height: 84vh;
   width: auto;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(mainpicture2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(background-small.jpg);
   background-size: cover;
   border-top: 2px solid #bd7418 ;
   border-bottom: 2px solid #bd7418;
@@ -305,7 +306,7 @@ padding: 5px;
 
 .box-icon-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   min-width: 300px;
 }
@@ -313,7 +314,7 @@ padding: 5px;
 .box-icon {
   flex-grow: 0;
   flex-shrink: 0;
-  flex-basis: 25%;
+  flex-basis: 20%;
   min-width: 300px;
   margin: 10px;
   height: 350px;
@@ -366,7 +367,7 @@ footer {
 
 .kontakt-section2 {
   font-size: 12px;
-  color: #072633;
+  color: #41484b;
   font-weight: 200;
 } 
 
@@ -392,9 +393,7 @@ footer {
   height: 50px;
   width: auto;
   margin-bottom: 20px;
-  border:  0.5px grey  solid;
   padding:5px;
-
 }
 
 .address {
@@ -408,7 +407,7 @@ footer {
 }
 
 .address p {
-  color:#072633;
+  color: #41484b;
   display: inline;
 }
 
